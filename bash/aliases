@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+alias reload_aliases="source ~/.bash/aliases"
+alias aliases="vim ~/.bash/aliases && reload_aliases"
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
+alias vimkeys="vim ~/.vim/keybindings.vim"
+alias gvimrc="vim ~/.gvimrc"
+
+alias rake="noglob rake"
+alias rdm="bundle exec rake db:migrate"
+alias rdtp="bundle exec rake db:test:prepare"
+alias rdmr="bundle exec rake db:migrate:reset"
+alias rrs="bundle exec rake spec"
+alias rc="bundle exec rake cucumber"
+
+alias rg="rails generate"
+alias rmig="rails generate migration"
+
+alias g="git"
+alias gp="git push"
+alias gs="git status"
+alias grm="git rebase origin/master"
+alias grim="git rebase -i origin/master"
+alias grc="git rebase --continue"
+alias gca="git commit --amend"
+alias gdc="git diff --cached"
+
+alias tmux="tmux -2"
+alias t="tmux"
+alias ta="tmux attach"
+alias tat="tmux attach -t"
+
+alias be="bundle exec"
+alias vii="mvim --remote-silent"
+alias gemopen="BUNDLER_EDITOR=mate bundle open"
+

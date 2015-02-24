@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+. ~/.bash/env
+
+# homebrew
+export PATH="usr/local/sbin:$PATH"
+
+# use updated coreutils
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+
