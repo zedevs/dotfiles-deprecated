@@ -1,0 +1,8 @@
+# vim
+vim/bundle/*
+vim/swaps/*
+vim/undo/*
+vim/backups/*
+viminfo
+.netrwhist
+

@@ -26,3 +26,5 @@ noremap U <C-r>
 " faster :close
 abbrev c close
 
+" TODO: shortcut for copying to system clipboard
+
