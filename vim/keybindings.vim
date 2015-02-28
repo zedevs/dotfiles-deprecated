@@ -11,11 +11,7 @@ nnoremap <leader>s :set spell!<cr>
 nnoremap <leader>nm :set number!<cr>
 
 " list and select buffers
-nnoremap <leader>b :buffers<CR>:buffer<space>
-
-" normal mode quick access 
-inoremap jj <esc> 
-inoremap kk <c-o>
+nnoremap <leader>b :buffers<CR>:b
 
 " fold tags with matchit
 noremap <leader>ft V%zf
