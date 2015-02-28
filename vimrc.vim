@@ -10,7 +10,11 @@ Plugin '29decibel/codeschool-vim-theme'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdcommenter' " remove that and write a custom function
 Plugin 'tmhedberg/matchit'
+Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -68,7 +72,11 @@ set textwidth=80
 set formatoptions=qrn1
 set linebreak
 
-" disable netrw
-" let g:loaded_netrw = 1
-" let g:loaded_netrwPlugin = 1
+" file-specific settings
+au FileType html setl tabstop=4 shiftwidth=4 softtabstop=2
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
