@@ -5,15 +5,19 @@ let mapleader = ","
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin '29decibel/codeschool-vim-theme'
+Plugin 'rking/ag.vim'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'majutsushi/tagbar'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'ajh17/Spacegray.vim'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'scrooloose/nerdcommenter' " remove that and write a custom function
+Plugin 'tomtom/tcomment_vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
-Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
@@ -37,7 +41,7 @@ set backspace=indent,eol,start
 set complete-=i
 set history=1000
 
-" centralize backups, swapfiles, history and undo 
+" centralize backups, swapfiles, history and undo
 set undofile
 set viminfo+=n~/.vim/viminfo
 set backupdir=~/.vim/backups
@@ -48,12 +52,14 @@ endif
 
 " looks
 set t_Co=256
+colorscheme spacegray
 syntax enable
 set number
 set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set scrolloff=3
 set noerrorbells visualbell t_vb= " Disable error bells
+match ErrorMsg '\s\+$' " highlight trailing spaces
 
 " tab settings
 set tabstop=2
@@ -74,19 +80,11 @@ set textwidth=80
 set formatoptions=qrn1
 set linebreak
 
-" file-specific settings
-au FileType html setl tabstop=4 shiftwidth=4 softtabstop=2
-
-" Save on focus lost
-autocmd BufLeave,FocusLost * bufdo! call WriteFile()
-function WriteFile()
-   if (&buftype=="") && (expand("%:r") > "") && (&readonly==0)
-      write
-   endif
-endfunction
-
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Airline
+let g:airline_powerline_fonts=1
 
