@@ -5,15 +5,17 @@ let mapleader = ","
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'wincent/Command-T'
+Plugin 'mileszs/ack.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
 Plugin '29decibel/codeschool-vim-theme'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdcommenter' " remove that and write a custom function
 Plugin 'tmhedberg/matchit'
-Plugin 'mileszs/ack.vim'
+Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
 
 call vundle#end()
@@ -74,6 +76,14 @@ set linebreak
 
 " file-specific settings
 au FileType html setl tabstop=4 shiftwidth=4 softtabstop=2
+
+" Save on focus lost
+autocmd BufLeave,FocusLost * bufdo! call WriteFile()
+function WriteFile()
+   if (&buftype=="") && (expand("%:r") > "") && (&readonly==0)
+      write
+   endif
+endfunction
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
