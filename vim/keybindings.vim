@@ -1,5 +1,8 @@
 " clear search
-nnoremap <leader><space> :noh<CR>
+nnoremap <leader><space> :noh<cr>
+
+" clear trailing spaces
+nnoremap <leader>ts :%s/\s\+$//e<cr>
 
 " toggle tabstops and EOLS
 nnoremap <leader>l :set list!<cr>
@@ -10,17 +13,17 @@ nnoremap <leader>s :set spell!<cr>
 " toggle numbers
 nnoremap <leader>nm :set number!<cr>
 
+" open file explorer
+nnoremap <C-k> :Explore<cr>
+
 " list and select buffers
-nnoremap <leader>b :buffers<CR>:b
+nnoremap <leader>b :buffers<cr>:b
 
 " fold tags with matchit
 noremap <leader>ft V%zf
 
 " remap redo to U
 noremap U <C-r>
-
-" faster :close
-abbrev c close
 
 " TODO: shortcut for copying to system clipboard
 
