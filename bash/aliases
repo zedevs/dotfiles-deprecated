@@ -6,7 +6,7 @@ alias vimrc="vim ~/.vimrc"
 alias vimkeys="vim ~/.vim/keybindings.vim"
 alias gvimrc="vim ~/.gvimrc"
 alias dots="cd ~/dotfiles"
-
+alias dev="cd ~/dev/"
 
 alias rake="noglob rake"
 alias rdm="bundle exec rake db:migrate"
