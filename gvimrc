@@ -1,6 +1,6 @@
 set background=dark
 colorscheme spacegray
-set guifont=Inconsolata\ for\ Powerline:h15
+set guifont=Sauce\ Code\ Powerline:h13
 set guioptions-=L
 set guioptions-=r
 " cmd-w shouldn't close the last buffer in MacVim
