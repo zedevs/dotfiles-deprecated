@@ -25,5 +25,9 @@ noremap <leader>ft V%zf
 " remap redo to U
 noremap U <C-r>
 
+" normal mode quick access
+inoremap jj <esc>
+inoremap kk <c-o>
+
 " TODO: shortcut for copying to system clipboard
 
