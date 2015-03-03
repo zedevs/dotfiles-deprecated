@@ -61,7 +61,6 @@ set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set scrolloff=3
 set noerrorbells visualbell t_vb= " Disable error bells
-match ErrorMsg '\s\+$' " highlight trailing spaces
 
 " tab settings
 set tabstop=2
