@@ -3,6 +3,7 @@ alias reload_aliases="source ~/.bash/aliases"
 alias aliases="vim ~/.bash/aliases && reload_aliases"
 alias dots="cd ~/dotfiles"
 alias vimrc="dots && vim ~/.vimrc"
+alias gvimrc="dots && vim ~/.gvimrc"
 alias vimkeys="vim ~/.vim/keybindings.vim"
 alias dev="cd ~/dev/"
 
