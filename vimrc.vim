@@ -23,6 +23,7 @@ Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
+Plugin 'wikitopian/hardmode'
 
 call vundle#end()
 filetype plugin indent on
@@ -90,4 +91,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+" Hardmode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+noremap <esc> <NOP>
 
