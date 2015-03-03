@@ -15,6 +15,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
