@@ -17,6 +17,9 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-surround'
+Plugin 'slim-template/vim-slim'
+Plugin 'othree/html5.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
@@ -36,6 +39,7 @@ source ~/.vim/functions.vim
 
 " sensible defaults
 set laststatus=2
+set backspace=2
 set showcmd
 set wildmenu
 set ttimeout
@@ -91,8 +95,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Hardmode
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-noremap <esc> <NOP>
+inoremap <esc> <NOP>
 
