@@ -19,6 +19,9 @@ nnoremap <C-k> :Explore<cr>
 " list and select buffers
 nnoremap <leader>b :buffers<cr>:b
 
+" quickly close buffer
+nnoremap <D-w> :bd<cr>
+
 " fold tags with matchit
 noremap <leader>ft V%zf
 
