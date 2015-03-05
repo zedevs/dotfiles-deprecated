@@ -12,7 +12,13 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tmhedberg/matchit'
+Plugin 'Raimondi/delimitMate'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
@@ -20,12 +26,6 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
 Plugin 'slim-template/vim-slim'
 Plugin 'othree/html5.vim'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tmhedberg/matchit'
-Plugin 'Raimondi/delimitMate' " autocloses (,[,' etc.
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'mattn/emmet-vim'
 Plugin 'wikitopian/hardmode'
 
 call vundle#end()
@@ -47,17 +47,18 @@ set ttimeoutlen=100
 set backspace=indent,eol,start
 set complete-=i
 set history=1000
+set hidden
 
 " centralize backups, swapfiles, history and undo
 set undofile
+set undolevels=100
+set undodir=~/.vim/undo
 set viminfo+=n~/.vim/viminfo
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
 
-" looks
+
+" look and feel
 set t_Co=256
 colorscheme spacegray
 syntax enable
@@ -65,7 +66,7 @@ set number
 set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set scrolloff=3
-set noerrorbells visualbell t_vb= " Disable error bells
+set noerrorbells visualbell t_vb=
 
 " tab settings
 set tabstop=2

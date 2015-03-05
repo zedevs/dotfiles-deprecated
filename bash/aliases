@@ -32,6 +32,5 @@ alias ta="tmux attach"
 alias tat="tmux attach -t"
 
 alias be="bundle exec"
-alias vii="mvim --remote-silent"
-alias gemopen="BUNDLER_EDITOR=mate bundle open"
+alias gemopen="BUNDLER_EDITOR=mvim bundle open"
 
