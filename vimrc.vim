@@ -17,7 +17,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'tmhedberg/matchit'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'vim-ruby/vim-ruby'
@@ -27,6 +26,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'slim-template/vim-slim'
 Plugin 'othree/html5.vim'
 Plugin 'wikitopian/hardmode'
+Plugin 'chrisbra/csv.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,11 +39,11 @@ source ~/.vim/functions.vim
 
 " sensible defaults
 set laststatus=2
-set backspace=2
 set showcmd
 set wildmenu
 set ttimeout
 set ttimeoutlen=100
+set backspace=2
 set backspace=indent,eol,start
 set complete-=i
 set history=1000
@@ -55,8 +55,7 @@ set undolevels=100
 set undodir=~/.vim/undo
 set viminfo+=n~/.vim/viminfo
 set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-
+set noswapfile
 
 " look and feel
 set t_Co=256
@@ -85,7 +84,6 @@ set incsearch
 set wrap
 set textwidth=80
 set formatoptions=qrn1
-set linebreak
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"

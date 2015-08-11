@@ -1,6 +1,6 @@
 " clear search
 nnoremap <leader><space> :noh<cr>
-
+ab W w
 " clear trailing spaces
 nnoremap <leader>ts :%s/\s\+$//e<cr>
 
