@@ -14,10 +14,12 @@ Thumbs.db
 
 # vim
 vim/bundle/*
-!vim/bundle/Vundle.vim
 vim/swaps/*
 vim/undo/*
 vim/backups/*
 viminfo
 .netrwhist
 
+# exceptions
+!.keep
+!vim/bundle/Vundle.vim
