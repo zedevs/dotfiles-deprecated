@@ -1,4 +1,5 @@
 *.pyc
+*.private
 
 # Folder view configuration files
 .DS_Store
@@ -13,6 +14,7 @@ Thumbs.db
 .Trashes
 
 # vim
+tags
 vim/bundle/*
 vim/swaps/*
 vim/undo/*
