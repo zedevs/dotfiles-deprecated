@@ -3,7 +3,7 @@ source ~/dotfiles/zsh/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen theme dpoggi
+antigen theme https://gist.github.com/zedevs/c37fa8fb7edc22da0355 dpoggi
 antigen apply
 
 . ~/.zsh/aliases
