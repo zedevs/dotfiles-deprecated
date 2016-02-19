@@ -5,28 +5,31 @@ let mapleader = ","
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'ajh17/Spacegray.vim'
 Plugin 'rking/ag.vim'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'JazzCore/ctrlp-cmatcher' " manual install required
 Plugin 'tpope/vim-vinegar'
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'ajh17/Spacegray.vim'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-repeat'
+Plugin 'AndrewRadev/writable_search.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mtth/scratch.vim'
+
+" Lnaguage specific
 Plugin 'slim-template/vim-slim'
 Plugin 'othree/html5.vim'
-Plugin 'wikitopian/hardmode'
 Plugin 'chrisbra/csv.vim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
@@ -95,4 +98,16 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" CtrlP + Cmatcher
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch'}
+let g:ctrlp_custom_ignore = { 'dir': '\v(vundle|vim-backup|vim-undo)|([\/]\.(git|hg|svn)$)' }
+let g:ctrlp_working_path_mode = '0'
+
+
+" Writable Search
+let g:writable_search_backends = ['ag.vim', 'egrep']
+
+" TComment
+map <Leader>, :TComment<cr>
 

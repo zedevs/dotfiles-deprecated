@@ -30,6 +30,10 @@ noremap U <C-r>
 
 " normal mode quick access
 inoremap jj <esc>
+inoremap jk <esc>
+
+" too slow, so breaking the habbit
+inoremap <C-c> <nop>
 
 " tabline shortcuts
 nmap <D-1> <Plug>AirlineSelectTab1
