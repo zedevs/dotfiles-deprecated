@@ -10,6 +10,8 @@ alias smartcow="fortune | cowsay | lolcat"
 alias ctags_rails="ctags -R --languages=ruby --exclude=.git --exclude=log ."
 alias hosts="sudo vim /private/etc/hosts"
 
+alias ls="ls -G --color --group-directories-first"
+
 alias rake="noglob rake"
 alias rdm="bundle exec rake db:migrate"
 alias rdtp="bundle exec rake db:test:prepare"
