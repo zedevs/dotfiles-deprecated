@@ -1,48 +1,68 @@
 " clear search
-nnoremap <leader><space> :noh<cr>
+nmap <leader><space> :noh<cr>
 ab W w
+
+" reload vimrc
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 " clear trailing spaces
-nnoremap <leader>ts :%s/\s\+$//e<cr>
+nmap <leader>ts :%s/\s\+$//e<cr>
 
 " toggle tabstops and EOLS
-nnoremap <leader>l :set list!<cr>
+nmap <leader>l :set list!<cr>
 
 " toggle spell check
-nnoremap <leader>s :set spell!<cr>
+nmap <leader>s :set spell!<cr>
 
 " toggle numbers
-nnoremap <leader>nm :set number!<cr>
+nmap <leader>nm :set number!<cr>
 
 " open file explorer
-nnoremap <C-k> :Explore<cr>
+nmap <C-k> :Explore<cr>
 
 " list and select buffers
-nnoremap <leader>b :buffers<cr>:b
+nmap <leader>b :buffers<cr>:b
 
-" quickly close buffer
-nnoremap <D-w> :bd<cr>
+" delete buffer
+nmap <leader>x :bd<cr>
+
+" close window
+nmap <leader>c :close<cr>
 
 " fold tags with matchit
-noremap <leader>ft V%zf
+nmap <leader>ft V%zf
 
 " remap redo to U
-noremap U <C-r>
+nmap U <C-r>
 
 " normal mode quick access
-inoremap jj <esc>
-inoremap jk <esc>
+imap jj <esc>
+imap jk <esc>
 
 " too slow, so breaking the habbit
-inoremap <C-c> <nop>
+nmap <C-c> <nop>
 
 " tabline shortcuts
-nmap <D-1> <Plug>AirlineSelectTab1
-nmap <D-2> <Plug>AirlineSelectTab2
-nmap <D-3> <Plug>AirlineSelectTab3
-nmap <D-4> <Plug>AirlineSelectTab4
-nmap <D-5> <Plug>AirlineSelectTab5
-nmap <D-6> <Plug>AirlineSelectTab6
-nmap <D-7> <Plug>AirlineSelectTab7
-nmap <D-8> <Plug>AirlineSelectTab8
-nmap <D-9> <Plug>AirlineSelectTab9
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
+
+" Easier access to system clipboard
+map <C-a> "+
+
+" Slimux
+map <leader>sl :SlimuxREPLSendLine<CR>
+
+" vim-rspec
+map <leader>t :call RunCurrentSpecFile()<CR>
+map <leader>ta :call RunAllSpecs()<CR>
+
+" TComment
+map <leader><leader> :TComment<cr>
 

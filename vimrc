@@ -24,8 +24,12 @@ Plugin 'tpope/vim-repeat'
 Plugin 'AndrewRadev/writable_search.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mtth/scratch.vim'
+Plugin 'epeli/slimux'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'thoughtbot/vim-rspec'
 
-" Lnaguage specific
+" Language specific
 Plugin 'slim-template/vim-slim'
 Plugin 'othree/html5.vim'
 Plugin 'chrisbra/csv.vim'
@@ -62,7 +66,8 @@ set noswapfile
 
 " look and feel
 set t_Co=256
-colorscheme spacegray
+set background=dark
+colorscheme hybrid
 syntax enable
 set number
 set ruler
@@ -104,10 +109,8 @@ let g:ctrlp_match_func = {'match' : 'matcher#cmatch'}
 let g:ctrlp_custom_ignore = { 'dir': '\v(vundle|vim-backup|vim-undo)|([\/]\.(git|hg|svn)$)' }
 let g:ctrlp_working_path_mode = '0'
 
-
 " Writable Search
 let g:writable_search_backends = ['ag.vim', 'egrep']
 
-" TComment
-map <Leader>, :TComment<cr>
-
+" rspec-vim
+let g:rspec_command = 'SlimuxShellRun zeus test {spec}'
