@@ -11,9 +11,7 @@ Thumbs.db
 # vim
 tags
 vim/bundle/*
-vim/swaps/*
 vim/undo/*
-vim/backups/*
 viminfo
 .netrwhist
 

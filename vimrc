@@ -2,7 +2,7 @@ set nocompatible
 let mapleader = ","
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ajh17/Spacegray.vim'
@@ -39,10 +39,10 @@ call vundle#end()
 filetype plugin indent on
 
 " include keyboard shortcuts
-source ~/.vim/keybindings.vim
+source $HOME/.vim/keybindings.vim
 
 " include custom functions
-source ~/.vim/functions.vim
+source $HOME/.vim/functions.vim
 
 " sensible defaults
 set laststatus=2
@@ -59,10 +59,11 @@ set hidden
 " centralize backups, swapfiles, history and undo
 set undofile
 set undolevels=100
-set undodir=~/.vim/undo
-set viminfo+=n~/.vim/viminfo
-set backupdir=~/.vim/backups
+set undodir=$HOME/.vim/undo
+set viminfo+=n$HOME/.vim/viminfo
 set noswapfile
+set nobackup
+set nowritebackup
 
 " look and feel
 set t_Co=256
