@@ -41,8 +41,10 @@ filetype plugin indent on
 " include keyboard shortcuts
 source $HOME/.vim/keybindings.vim
 
-" include custom functions
-source $HOME/.vim/functions.vim
+" include all scripts
+for rcfile in split(globpath($HOME . "/.vim/script/", "*.vim"), '\n')
+  execute('source '.rcfile)
+endfor
 
 " sensible defaults
 set laststatus=2
