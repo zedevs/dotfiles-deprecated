@@ -36,8 +36,12 @@ nmap <leader>ft V%zf
 nmap U <C-r>
 
 " normal mode quick access
-imap jj <esc>
-imap jk <esc>
+imap jj <esc>:w<cr>
+imap jk <esc>:w<cr>
+
+" shiftless commands
+noremap ; :
+noremap ;; ;
 
 " too slow, so breaking the habbit
 nmap <C-c> <nop>
