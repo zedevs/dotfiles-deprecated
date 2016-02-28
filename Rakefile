@@ -13,7 +13,7 @@ end
 task :link_files do
   Dir['*'].each do |file|
     case file
-    when 'Rakefile', 'README.md', 'bin', 'tags'
+    when 'Rakefile', 'README.md', 'bin', 'tags', 'terminal'
       next
     else
       link_file file, home_slash(".#{file}")
