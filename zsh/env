@@ -4,6 +4,7 @@
 
 # homebrew
 export PATH="usr/local/sbin:$PATH"
+export EDITOR='nvim'
 
 # don't prefix coreutils commands
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
