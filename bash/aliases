@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 alias reload_aliases="source ~/.bash/aliases"
-alias aliases="vim ~/.bash/aliases && reload_aliases"
+alias aliases="nvim ~/.bash/aliases && reload_aliases"
 alias dots="cd ~/dotfiles"
-alias dotvim="vim ~/dotfiles"
-alias vimrc="vim ~/dotfiles/vimrc"
-alias vimkeys="vim ~/.vim/keybindings.vim"
+alias dotvim="nvim ~/dotfiles"
+alias vimrc="nvim ~/dotfiles/vimrc"
+alias vimkeys="nvim ~/.vim/keybindings.vim"
 alias dev="cd ~/dev/"
 alias smartcow="fortune | cowsay | lolcat"
 alias ctags_rails="ctags -R --languages=ruby --exclude=.git --exclude=log ."
-alias hosts="sudo vim /private/etc/hosts"
+alias hosts="sudo nvim /private/etc/hosts"
 
 alias ls="ls -G --color --group-directories-first"
 
@@ -38,5 +38,5 @@ alias ta="tmux attach"
 alias tat="tmux attach -t"
 
 alias be="bundle exec"
-alias gemopen="BUNDLER_EDITOR=mvim bundle open"
+alias gemopen="BUNDLER_EDITOR=nvim bundle open"
 

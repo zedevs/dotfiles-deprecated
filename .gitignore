@@ -12,8 +12,9 @@ Thumbs.db
 tags
 vim/bundle/*
 vim/undo/*
-viminfo
+viminfo.*
 .netrwhist
+*~
 
 # exceptions
 !.keep

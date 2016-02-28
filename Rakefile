@@ -4,9 +4,10 @@ include FileUtils
 
 desc "Install into the user's home"
 task install: [:link_files] do
+  system 'pip install neovim'
   system 'git submodule init'
   system 'git submodule update'
-  system 'vim +PluginInstall +qall'
+  system 'nvim +PluginInstall +qall'
 end
 
 task :link_files do

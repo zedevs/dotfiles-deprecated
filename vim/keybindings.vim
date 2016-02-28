@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " clear search
 nmap <leader><space> :noh<cr>
 ab W w
@@ -18,7 +20,8 @@ nmap <leader>s :set spell!<cr>
 nmap <leader>nm :set number!<cr>
 
 " open file explorer
-nmap <C-k> :Explore<cr>
+nmap <C-k> :NERDTreeToggle<cr>
+autocmd FileType nerdtree noremap <buffer> <C-k> :NERDTreeToggle<cr>
 
 " list and select buffers
 nmap <leader>b :buffers<cr>:b
@@ -36,8 +39,8 @@ nmap <leader>ft V%zf
 nmap U <C-r>
 
 " normal mode quick access
-imap jj <esc>:w<cr>
-imap jk <esc>:w<cr>
+imap jj <esc>
+imap jk <esc>
 
 " shiftless commands
 noremap ; :
@@ -62,11 +65,12 @@ map <C-a> "+
 
 " Slimux
 map <leader>sl :SlimuxREPLSendLine<CR>
+map <leader>ss :SlimuxShellConfigure<CR>
 
 " vim-rspec
 map <leader>t :call RunCurrentSpecFile()<CR>
 map <leader>ta :call RunAllSpecs()<CR>
 
 " TComment
-map <leader><leader> :TComment<cr>
+map <leader>, :TComment<cr>
 

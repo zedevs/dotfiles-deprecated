@@ -57,6 +57,8 @@ brew install ctags
 brew install macvim
 brew linkapps macvim
 brew install gnu-sed
+brew install python3
+brew install python
 
 # Install rbenv
 brew install rbenv
