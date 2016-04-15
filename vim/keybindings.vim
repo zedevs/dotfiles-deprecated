@@ -20,7 +20,7 @@ nmap <leader>s :set spell!<cr>
 nmap <leader>nm :set number!<cr>
 
 " open file explorer
-nmap <C-k> :NERDTreeToggle<cr>
+nmap <C-k> :NERDTreeFind<cr>
 autocmd FileType nerdtree noremap <buffer> <C-k> :NERDTreeToggle<cr>
 
 " list and select buffers
@@ -68,8 +68,8 @@ map <leader>sl :SlimuxREPLSendLine<CR>
 map <leader>ss :SlimuxShellConfigure<CR>
 
 " vim-rspec
-map <leader>t :call RunCurrentSpecFile()<CR>
-map <leader>ta :call RunAllSpecs()<CR>
+map <C-t> :call RunCurrentSpecFile()<CR>
+map <leader>ta :SlimuxShellRun be rake test<CR>
 
 " TComment
 map <leader>, :TComment<cr>
