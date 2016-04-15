@@ -86,8 +86,6 @@ set nowritebackup
 syntax enable
 set background=dark
 colorscheme spacegray
-hi Normal guibg=none
-hi LineNr guibg=none
 set number
 set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -147,10 +145,10 @@ call NERDTreeHighlightFile('html', 'yellow', 'none', '#d8a235', 'none')
 call NERDTreeHighlightFile('css', 'cyan', 'none', '#5486C0', 'none')
 call NERDTreeHighlightFile('scss', 'cyan', 'none', '#5486C0', 'none')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', 'none')
-call NERDTreeHighlightFile('rb', 'Red', 'none', '#990000', 'none')
 call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', 'none')
 call NERDTreeHighlightFile('gitconfig', 'black', 'none', '#686868', 'none')
 call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#7F7F7F', 'none')
+
 
 " Writable Search
 let g:writable_search_backends = ['ag.vim', 'egrep']

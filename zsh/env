@@ -3,7 +3,7 @@
 . ~/.bash/env
 
 # homebrew
-export PATH="usr/local/sbin:$PATH"
+export PATH="usr/local/sbin:/usr/local/sbin:$PATH"
 export EDITOR='nvim'
 
 # don't prefix coreutils commands
