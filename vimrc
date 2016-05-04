@@ -46,6 +46,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'othree/html5.vim'
 Plugin 'chrisbra/csv.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'bfontaine/Brewfile.vim'
 
 call vundle#end()
 filetype plugin indent on
