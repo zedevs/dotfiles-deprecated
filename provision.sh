@@ -14,5 +14,14 @@ brew bundle --file=Brewfile
 
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
+# set deafult shell to zsh
+echo `which zsh` | sudo tee -a /etc/shells
+chsh -s `which zsh`
+
+# configure nvim
+mkdir ~/.config
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
 # Cleanup old downloads
 brew cleanup
