@@ -12,6 +12,9 @@ brew tap Homebrew/bundle
 # Install tools and apps from the Brewfile wih Brew and Cask
 brew bundle --file=Brewfile
 
+# Cleanup old downloads
+brew cleanup
+
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # set deafult shell to zsh
@@ -44,5 +47,6 @@ export CFLAGS=-Qunused-arguments
 export CPPFLAGS=-Qunused-arguments
 bash $HOME/.vim/bundle/ctrlp-cmatcher/install.sh
 
-# Cleanup old downloads
-brew cleanup
+# setup OSX
+bash $current_dir/osx_config
+
