@@ -89,7 +89,7 @@ syntax enable
 set background=dark
 colorscheme OceanicNext
 " hack correct background color
-highlight Normal guibg=000000 
+highlight Normal guibg=000000
 set number
 set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
