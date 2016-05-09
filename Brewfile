@@ -20,8 +20,7 @@ brew 'diff-so-fancy'
 
 # Text editing
 brew 'vim', args: ['override-system-vi']
-tap 'neovim/neovim'
-brew 'neovim/neovim/neovim'
+brew 'neovim'
 brew 'the_silver_searcher'
 brew 'homebrew/dupes/grep'
 brew 'tmux'
@@ -59,8 +58,10 @@ cask 'atom'
 cask 'slack'
 cask 'skype'
 cask 'sketch'
+cask 'spotify'
 cask 'vagrant'
 cask 'virtualbox'
+cask 'vlc'
 
 # Fonts
 tap 'caskroom/fonts'
