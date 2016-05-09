@@ -1,6 +1,3 @@
-" some vim (not Neovim) defaults
-source $HOME/.vim/vim74.vim
-
 " set the runtime path to include Vundle and initialize
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
