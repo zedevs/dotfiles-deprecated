@@ -8,6 +8,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Looks
 Plugin 'ajh17/Spacegray.vim'
+Plugin 'mhartington/oceanic-next'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'ryanoasis/vim-devicons'
 
@@ -86,7 +87,9 @@ set nowritebackup
 " theme settings
 syntax enable
 set background=dark
-colorscheme spacegray
+colorscheme OceanicNext
+" hack correct background color
+highlight Normal guibg=000000 
 set number
 set ruler
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -124,6 +127,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:airline_theme='oceanicnext'
 
 " CtrlP + Cmatcher
 let g:ctrlp_match_func = {'match' : 'matcher#cmatch'}
@@ -137,19 +141,6 @@ let g:NERDTreeWinSize=30
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeQuitOnOpen=1
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
-call NERDTreeHighlightFile('md', 'blue', 'none', '#6699CC', 'none')
-call NERDTreeHighlightFile('config', 'yellow', 'none', '#d8a235', 'none')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', '#d8a235', 'none')
-call NERDTreeHighlightFile('json', 'green', 'none', '#d8a235', 'none')
-call NERDTreeHighlightFile('js', 'green', 'none', 'green', 'none')
-call NERDTreeHighlightFile('html', 'yellow', 'none', '#d8a235', 'none')
-call NERDTreeHighlightFile('css', 'cyan', 'none', '#5486C0', 'none')
-call NERDTreeHighlightFile('scss', 'cyan', 'none', '#5486C0', 'none')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', 'none')
-call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', 'none')
-call NERDTreeHighlightFile('gitconfig', 'black', 'none', '#686868', 'none')
-call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#7F7F7F', 'none')
-
 
 " Writable Search
 let g:writable_search_backends = ['ag.vim', 'egrep']
