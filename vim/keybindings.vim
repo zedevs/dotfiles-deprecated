@@ -29,6 +29,9 @@ nmap <leader>b :buffers<cr>:b
 " delete buffer
 nmap <leader>x :bd<cr>
 
+" quick quit
+nmap <leader>q :q<cr>
+
 " close window
 nmap <leader>c :close<cr>
 
