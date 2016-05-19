@@ -10,3 +10,5 @@ export EDITOR='nvim'
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
 
+# add global composer packages to path
+export PATH="$HOME/.composer/vendor/bin:$PATH"

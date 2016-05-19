@@ -16,15 +16,16 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'JazzCore/ctrlp-cmatcher' " manual install required
 Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'mattn/emmet-vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'AndrewRadev/writable_search.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mtth/scratch.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/nerdtree'
+Plugin 'chrisbra/csv.vim'
+Plugin 'bfontaine/Brewfile.vim'
 
 " tpope
 Plugin 'tpope/vim-surround'
@@ -36,15 +37,21 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'epeli/slimux'
 Plugin 'tmux-plugins/vim-tmux'
 
-" Language specific
+" Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'slim-template/vim-slim'
-Plugin 'othree/html5.vim'
-Plugin 'chrisbra/csv.vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'bfontaine/Brewfile.vim'
+
+" PHP
+Plugin 'StanAngeloff/php.vim'
+Plugin 'scrooloose/syntastic'
+
+" Front-end
+Plugin 'othree/html5.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'alvan/vim-closetag'
 
 call vundle#end()
 filetype plugin indent on
@@ -68,7 +75,6 @@ set wildmenu
 set ttimeout
 set ttimeoutlen=100
 set backspace=2
-set backspace=indent,eol,start
 set complete-=i
 set history=1000
 set hidden
@@ -94,9 +100,9 @@ set scrolloff=3
 set noerrorbells visualbell
 
 " tab settings
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 
@@ -144,3 +150,19 @@ let g:writable_search_backends = ['ag.vim', 'egrep']
 
 " rspec-vim
 let g:rspec_command = 'SlimuxShellRun zeus test {spec}'
+
+" vim-closetag
+let g:closetag_filenames = "*.html,*.phtml,*.php,*.html.*"
+
+" syntastic
+" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
+" noremap <C-w>e :SyntasticToggleMode<cr>
+let g:syntastic_php_checkers = ['php', 'phpcs']
+let g:syntastic_html_checkers = ['']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
