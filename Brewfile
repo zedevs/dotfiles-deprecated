@@ -62,6 +62,8 @@ cask 'spotify'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
+cask 'evernote'
+cask '1password'
 
 # Fonts
 tap 'caskroom/fonts'
