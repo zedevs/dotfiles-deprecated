@@ -32,6 +32,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-haml'
 
 " tmux
 Plugin 'epeli/slimux'
@@ -155,8 +156,8 @@ let g:rspec_command = 'SlimuxShellRun zeus test {spec}'
 let g:closetag_filenames = "*.html,*.phtml,*.php,*.html.*"
 
 " syntastic
-" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
-" noremap <C-w>e :SyntasticToggleMode<cr>
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes':   [],'passive_filetypes': [] }
+noremap <C-w>e :SyntasticToggleMode<cr>
 let g:syntastic_php_checkers = ['php', 'phpcs']
 let g:syntastic_html_checkers = ['']
 set statusline+=%#warningmsg#
