@@ -69,6 +69,9 @@ endfor
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
+" set clipboard to unnamed
+set clipboard=unnamed
+
 " sensible defaults
 set laststatus=2
 set showcmd

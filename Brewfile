@@ -24,6 +24,7 @@ brew 'neovim'
 brew 'the_silver_searcher'
 brew 'homebrew/dupes/grep'
 brew 'tmux'
+brew 'reattach-to-user-namespace'
 
 # Image related
 brew 'imagemagick', args: ['with-webp', 'with-tiff']
