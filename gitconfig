@@ -25,9 +25,8 @@
     # Use colors when paging regardless of default color setting.
     color = true
 
-    diff = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column --HILITE-UNREAD --pattern='^(added|deleted|modified): '
-    show = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column --HILITE-UNREAD --pattern='^(added|deleted|modified): '
-
+    diff = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column 
+    show = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column
 [alias]
   s = status
   c = commit --verbose
@@ -36,11 +35,19 @@
   ch = checkout
   cp = cherry-pick
   lg = log -p
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [push]
   default = tracking
 [branch]
   autosetuprebase = always
 [rerere]
-	enabled = true
+	enabled = false
+[diff]
+	tool = opendiff
+[difftool]
+	prompt = false
+[merge]
+	tool = opendiff
+[mergetool]
+	keepBackup = false
