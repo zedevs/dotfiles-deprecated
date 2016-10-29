@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-sudo
+sudo -v
 brew update
 brew upgrade
 
@@ -73,6 +73,7 @@ brew cask install slack
 brew cask install skype
 brew cask install sketch
 brew cask install sublime-text3
+brew cask install spectacle
 brew cask install spotify
 brew cask install tomighty
 brew cask install vagrant
