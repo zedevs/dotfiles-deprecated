@@ -25,8 +25,8 @@
     # Use colors when paging regardless of default color setting.
     color = true
 
-    diff = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column 
-    show = diff-so-fancy | less --tabs=4 --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column
+    diff = diff-so-fancy | less --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column 
+    show = diff-so-fancy | less --RAW-CONTROL-CHARS --quit-if-one-screen --no-init --tilde --clear-screen --status-column
 [alias]
   s = status
   c = commit --verbose
