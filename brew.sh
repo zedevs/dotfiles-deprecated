@@ -64,6 +64,7 @@ brew tap  caskroom/cask
 brew tap  caskroom/versions
 brew cask install appcleaner
 brew cask install battle-net
+brew cask install boom
 brew cask install evernote
 brew cask install filezilla
 brew cask install iterm2-nightly
