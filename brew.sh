@@ -23,6 +23,7 @@ brew install ctags
 brew install homebrew/dupes/openssh
 brew install zsh
 brew install diff-so-fancy
+brew tap homebrew/services
 
 # Text editing
 brew install vim --override-system-vi
@@ -65,6 +66,7 @@ brew tap  caskroom/versions
 brew cask install appcleaner
 brew cask install battle-net
 brew cask install boom
+brew cask install caffeine
 brew cask install evernote
 brew cask install filezilla
 brew cask install iterm2-nightly
