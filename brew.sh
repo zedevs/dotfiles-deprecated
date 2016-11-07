@@ -69,6 +69,7 @@ brew cask install boom
 brew cask install caffeine
 brew cask install evernote
 brew cask install filezilla
+brew cask install flux
 brew cask install iterm2-nightly
 brew cask install selfcontrol
 brew cask install sequel-pro-nightly
