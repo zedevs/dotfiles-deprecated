@@ -79,6 +79,7 @@ brew cask install sketch
 brew cask install sublime-text3
 brew cask install spectacle
 brew cask install spotify
+brew cask install the-unarchiver
 brew cask install tomighty
 brew cask install vagrant
 brew cask install viber
