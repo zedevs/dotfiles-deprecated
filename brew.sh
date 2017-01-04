@@ -64,7 +64,6 @@ brew install homebrew/completions/vagrant-completion
 brew tap  caskroom/cask
 brew tap  caskroom/versions
 brew cask install appcleaner
-brew cask install battle-net
 brew cask install boom
 brew cask install caffeine
 brew cask install evernote
@@ -77,7 +76,6 @@ brew cask install slack
 brew cask install skype
 brew cask install sketch
 brew cask install sublime-text3
-brew cask install spectacle
 brew cask install spotify
 brew cask install the-unarchiver
 brew cask install tomighty
