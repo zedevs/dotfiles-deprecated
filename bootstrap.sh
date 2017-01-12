@@ -10,6 +10,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude "*.swp" \
 		--exclude ".gitmodules" \
+		--exclude "node_modules" \
 		--exclude "bootstrap.sh" \
 		--exclude "brew.sh" \
 		--exclude "osx.sh" \
