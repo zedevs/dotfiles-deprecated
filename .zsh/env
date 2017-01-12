@@ -3,12 +3,16 @@
 . ~/.bash/env
 
 # homebrew
-export PATH="usr/local/sbin:/usr/local/sbin:$PATH"
+export PATH=usr/local/sbin:/usr/local/sbin:$PATH
 export EDITOR='nvim'
 
 # don't prefix coreutils commands
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH
+export MANPATH=$(brew --prefix coreutils)/libexec/gnuman:$MANPATH
 
 # add global composer packages to path
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
+# add Go path
+export GOPATH=/Volumes/dev/Go/work
+export PATH=$GOPATH/bin:$PATH
