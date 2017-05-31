@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-sudo -v
 brew update
 brew upgrade
 
@@ -29,7 +28,7 @@ brew tap homebrew/services
 brew install vim --override-system-vi
 brew install neovim/neovim/neovim
 brew install the_silver_searcher
-brew install homebrew/dupes/grep
+brew install grep
 brew install tmux
 brew install reattach-to-user-namespace
 brew install emacs
@@ -45,7 +44,7 @@ brew install ruby-build
 brew install python3
 brew install python
 brew install node
-brew tap  homebrew/php
+brew tap homebrew/php
 brew install homebrew/php/php70 --with-gmp
 brew install homebrew/php/php70-xdebug
 
@@ -54,11 +53,11 @@ brew install postgresql
 
 # Useful completions
 brew tap homebrew/completions
-brew install homebrew/completions/brew-cask-completion
-brew install homebrew/completions/bundler-completion
-brew install homebrew/completions/gem-completion
-brew install homebrew/completions/open-completion
-brew install homebrew/completions/vagrant-completion
+brew install brew-cask-completion
+brew install bundler-completion
+brew install gem-completion
+brew install open-completion
+brew install vagrant-completion
 
 # GUI
 brew tap  caskroom/cask
@@ -66,16 +65,13 @@ brew tap  caskroom/versions
 brew cask install appcleaner
 brew cask install boom
 brew cask install caffeine
-brew cask install evernote
 brew cask install filezilla
 brew cask install flux
 brew cask install iterm2-nightly
 brew cask install selfcontrol
 brew cask install sequel-pro-nightly
-brew cask install slack
-brew cask install skype
 brew cask install sketch
-brew cask install sublime-text3
+brew cask install atom
 brew cask install spotify
 brew cask install the-unarchiver
 brew cask install tomighty
