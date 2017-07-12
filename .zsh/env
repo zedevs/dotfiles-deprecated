@@ -16,3 +16,6 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 # add Go path
 export GOPATH=/Volumes/dev/Go/work
 export PATH=$GOPATH/bin:$PATH
+
+# Add node_modules/bin to path
+export PATH=$PATH:./node_modules/.bin
